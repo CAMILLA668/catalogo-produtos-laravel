@@ -17,5 +17,26 @@ class CategorySeeder extends Seeder
             'name' => 'Eletrônicos',
             'slug' => 'eletronicos'
         ]);
+        
+        Category::create([
+            'name' => 'Periféricos',
+            'slug' => 'perifericos'
+
+        ]);
+
+        Category::create([
+            'name' => 'Acessórios',
+            'slug' => 'acessorios'
+        ]);
+
+        Category::create([
+            'name' => 'Hardware',
+            'slug' => 'hardware'
+        ]);
+
+         Category::create([
+            'name' => 'Áudio & Vídeo',
+            'slug' => 'audio & video'
+        ]);
     }
 }
