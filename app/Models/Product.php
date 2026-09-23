@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class product extends Model
+{
+    protected $fillabel = [
+        'category_id',
+        'name',
+        'price',
+        'stock',
+        'description',
+        'image',
+        'is_active',
+    ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+}
