@@ -3,10 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Category;
 
-class product extends Model
+class Product extends Model
 {
-    protected $fillabel = [
+    protected $fillable = [
         'category_id',
         'name',
         'price',
